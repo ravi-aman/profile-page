@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofundit.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="header__wrapper">
+    <header></header>
+    <div class="cols__container">
+      <div class="left__col">
+        <div class="img__container">
+          <div class="profile" onclick="menuToggle()">
+            <img src="img/user_pic.jpeg" alt="Anna Smith" />
+            <!-- <span></span> -->
+          </div>
+          <div class="menu">
+            <h3>Ravikant Tiwari <br><span>Enterprenure</span></h3>
+            <ul>
+              <li><img src="img/user.png" alt=""><a href="#"></i>My Profile</a></li>
+              <li><img src="img/edit.png" alt=""><a href="#"></i>Edit Profile</a></li>
+              <li><img src="img/envelope.png" alt=""><a href="#">security</a></li>
+              <li><img src="img/settings.png" alt=""><a href="#">setting</a></li>
+              <li><img src="img/log-out.png" alt=""><a href="#">log out</a></li>
+            </ul>
+          </div>
+        </div>
+        <h1 style="padding: 30px 0px;">Ravikant Tiwari</h1>
+        <div class="basic_info">
+          <ul>
+            <li class="birthday">
+              <h1 class="label">Contact:</h1>
+              <p class="info">8744872368 ,abc@gmail.com</p>
+            </li>
+            <li class="sex">
+              <h1 class="label">Adress:</h1>
+              <p class="info">mohan garden new delhi 110059</p>
+            </li>
+            <li class="sex">
+              <h1 class="label">Gender:</h1>
+              <p class="info">Male</p>
+            </li>
+            <li class="sex">
+              <h1 class="label">security:</h1>
+              <p class="info">50,000</p>
+            </li>
+          </ul>
+        </div>
+        <div style="color: white;" class="content">
+          <ul>
+            <li><i class="fab fa-twitter"></i></li>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </ul>
+        </div>
+      </div>
+      <div class="right__col">
+        <nav>
+          <ul>
+            <button style="border-bottom: 2px solid rgb(255, 197, 88);" class="tab_btn">event</button>
+            <button class="tab_btn">other</button>
+          </ul>
+          <button class="cbtn" type="submit">Add more things</button>
+        </nav>
+        <div class="event">
+          <div class="cont">
+            <img src="img/img_1.avif" alt="Photo" />
+            <div class="caption">
+              <h2>drama </h2>
+            </div>
+          </div>
+          <div class="cont">
+            <img src="img/img_2.avif" alt="Photo" />
+            <div class="caption">
+              <h2>festival </h2>
+            </div>
+          </div>
+          <div class="cont">
+            <img src="img/img_3.avif" alt="Photo" />
+            <div class="caption">
+              <h2>act </h2>
+            </div>
+          </div>
+          <div class="cont">
+            <img src="img/img_4.avif" alt="Photo" />
+            <div class="caption">
+              <h2>compition </h2>
+            </div>
+          </div>
+          <div class="cont">
+            <img src="img/img_5.avif" alt="Photo" />
+            <div class="caption">
+              <h2>food distrbution </h2>
+            </div>
+          </div>
+          <div class="cont">
+            <img src="img/img_6.avif" alt="Photo" />
+            <div class="caption">
+              <h2>cloth distribution </h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    function menuToggle() {
+      const toggleMenu = document.querySelector('.menu')
+      toggleMenu.classList.toggle('active')
+    }
+  </script>
+  <script>
+    const tabs = document.querySelectorAll('.tab_btn');
+    const all_content = document.querySelectorAll('.event');
+
+
+    tab.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        tab.forEach(tab => { tab.classList.remove('active') });
+        tab.classList.add('active');
+
+      })
+    })
+  </script>
+</body>
+
+
+</html>
